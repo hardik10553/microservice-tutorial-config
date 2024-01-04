@@ -1,1 +1,10 @@
-
+spring:
+  application:
+    name: CONFIG-dev
+  cloud:
+    config:
+      server:
+        bootstrap: true
+        git:
+          uri: https://github.com/hardik10553/microservice-tutorial-config
+          clone-on-start: true
